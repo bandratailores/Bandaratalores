@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandra Tailores - Premium Saree Blouse Tailoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bandra Tailores</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#measurement" class="nav-link">Measurement Guide</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Exquisite Saree Blouse Tailoring</h1>
+            <p class="hero-subtitle">Crafting perfection with traditional expertise and contemporary designs in the heart of Bandra</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('portfolio')">View Portfolio</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">Book Appointment</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Saree Blouse">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Custom Blouse Tailoring</h3>
+                    <p>Precisely crafted blouses tailored to your exact measurements and style preferences</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design Consultation</h3>
+                    <p>Expert advice on blouse designs, fabrics, and embellishments to complement your saree</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Alterations & Repairs</h3>
+                    <p>Professional alterations to ensure perfect fit and repair services for your favorite blouses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="traditional">Traditional</button>
+                <button class="filter-btn" data-filter="contemporary">Contemporary</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="traditional">
+                    <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Traditional Blouse">
+                    <div class="portfolio-overlay">
+                        <h4>Traditional Silk Blouse</h4>
+                        <p>Hand-embroidered with zari work</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="contemporary">
+                    <img src="https://images.unsplash.com/photo-1596755024233-f90de13a7c5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Contemporary Design">
+                    <div class="portfolio-overlay">
+                        <h4>Modern Crop Top Style</h4>
+                        <p>Off-shoulder contemporary design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="traditional">
+                    <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Classic Design">
+                    <div class="portfolio-overlay">
+                        <h4>Classic Boat Neck</h4>
+                        <p>Timeless elegance design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="contemporary">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Modern Style">
+                    <div class="portfolio-overlay">
+                        <h4>Peplum Style</h4>
+                        <p>Trendy peplum silhouette</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="contemporary">
+                    <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Simple Design">
+                    <div class="portfolio-overlay">
+                        <h4>Simple Elegance</h4>
+                        <p>Minimalist modern design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="traditional">
+                    <img src="https://images.unsplash.com/photo-1602212016066-f0242437d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Traditional Style">
+                    <div class="portfolio-overlay">
+                        <h4>Traditional Craftsmanship</h4>
+                        <p>Classic Indian design elements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Measurement Guide Section -->
+    <section id="measurement" class="measurement-guide">
+        <div class="container">
+            <h2 class="section-title">Measurement Guide</h2>
+            <div class="measurement-content">
+                <div class="measurement-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Bust Measurement</h4>
+                            <p>Measure around the fullest part of your bust while wearing a bra. Keep the tape parallel to the ground.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Waist Measurement</h4>
+                            <p>Measure around the narrowest part of your waist, usually just above the belly button.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Shoulder Width</h4>
+                            <p>Measure from one shoulder seam to the other across your back.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Sleeve Length</h4>
+                            <p>Measure from shoulder seam to desired sleeve length with arm slightly bent.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="measurement-form">
+                    <h3>Submit Your Measurements</h3>
+                    <form id="measurementForm" class="google-form">
+                        <input type="hidden" name="formType" value="measurement">
+                        <div class="form-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="Contact Number" placeholder="Contact Number" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="number" name="Bust" placeholder="Bust (inches)" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="Waist" placeholder="Waist (inches)" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="number" name="Shoulder Width" placeholder="Shoulder Width (inches)" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="Sleeve Length" placeholder="Sleeve Length (inches)" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Additional Notes" placeholder="Additional Notes or Design Preferences" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Measurements</button>
+                        <div class="form-status" id="measurementStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Book Your Appointment</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>43A ven S.mahinda Himi Mawatha<br>Colombo-10, 01000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Contact</h4>
+                            <p>+94 7696 47757<br>+91 91234 56789</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon-Sat: 10:00 AM - 8:00 PM<br>Sunday: 11:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Schedule Appointment</h3>
+                    <form id="appointmentForm" class="google-form">
+                        <input type="hidden" name="formType" value="appointment">
+                        <div class="form-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="Contact Number" placeholder="Contact Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="Service Type" required>
+                                <option value="">Select Service</option>
+                                <option value="Custom Blouse Tailoring">Custom Blouse Tailoring</option>
+                                <option value="Design Consultation">Design Consultation</option>
+                                <option value="Alterations & Repairs">Alterations & Repairs</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" name="Preferred Date" placeholder="Preferred Date" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" placeholder="Message or Special Requirements" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Appointment</button>
+                        <div class="form-status" id="appointmentStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bandra Tailores</h3>
+                    <p>Crafting exquisite saree blouses with traditional expertise and contemporary designs since 1995.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#measurement">Measurement Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Custom Blouse Tailoring</li>
+                        <li>Design Consultation</li>
+                        <li>Alterations & Repairs</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>43A ven S.mahinda Himi Mawatha</li>
+                        <li>Colombo-10, 01000</li>
+                        <li>+94 7696 47757</li>
+                        <li>info@bandratailores.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bandra Tailores. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
